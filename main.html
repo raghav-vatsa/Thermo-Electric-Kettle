@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- This will help us to make the device responsive -->
+        <meta name="viewport" content="with = device-width, initial-scale = 1.0"> 
+
+        <title> Project Sard Garam</title>
+
+        <!-- To link the css file -->
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    </head>
+    <body>
+        <section class="header">
+            <nav>
+                <a href="index.html"><img src="images/logo_transparent2.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+
+                    <ul>
+                        <li><a href="main.html">Home</a></li>
+                        <li><a href="Project.html">Our Project</a></li>
+                        <li><a href="About_us.html">About Us</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars onclick="showMenu()"></i>
+
+            </nav>
+
+            <div class="text-box">
+                <h1 style="text-align: center;">Dual Purpose Thermo-Electric Kettle</h1>
+                <p style="font-weight: 300; font-size: large;">This site has been created as part of a final year capstone project by the students of TIET, Patiala and has been created 
+                    using HTML and CSS as a means of giving a brief introduction of our work. 
+                </p>
+                <a href="https://www.thapar.edu/" class="hero-btn">To visit our college website</a>
+            </div>
+
+        </section>
+
+        <!-------Home---------->
+        <section class="What" >
+            <h1> What we Do?</h1>
+            <p>
+                We have developed a unnique and innovative kettle which has the ability to not only increase the temerature of the 
+                liquid present in it's container but also decrease it's temperature based on the users requirement at the simple push 
+                of a button while keeping the design small and simple
+                <br><br>
+                The result is a compact, low cost and versatile compliance which saves you money and space for multiple appliances .
+            </p>
+        </section>
+
+        <section class="Potential" >
+            <h1>Potential Customers</h1>
+
+            <div class="row">
+                <div class="course-column">
+                    <img src="images/hotel.jpg">
+                    <h3>Hotels</h3>
+                    <P>Most hotels keep unique kettles for their guests</P>
+                </div>
+                <div class="course-column">
+                    <img src="images/hostel.jpg">
+                    <h3>Hostelers</h3>
+                    <P>Hostelers will benefit the most from a dual purpose kettle</P>
+                </div>
+                <div class="course-column">
+                    <img src="images/home.jpg">
+                    <h3>Home Owners</h3>
+                    <P>Buying a dual purpose kettle at the price of a normal one is just value for money
+                    </P>
+                </div>
+            </div>
+        </section>
+
+        <section class="Technology">
+            <h1>Technology</h1>
+
+            <p>
+                We have developed a unique kettle using Thermoelectric module or Peltier Module which is a thermal control module that has both 
+                warming and cooling effects. By passing an electric current through the module, it is possible to change the surface temperature 
+                of the module and keep it at the target temperature. So our innovative product can not only heat liquids but also cool them based on the 
+                users requirement.
+            </p>
+            <img src="images/peltier effect.jpg">
+            <p>  </p>
+        </section>
+
+
+        <section class="Features">
+            <h1>Key Features/Benefits</h1>
+            <div class="row">
+                <div class="course-column">
+                    <h3>Can heat and cool Liquids</h3>   
+                </div>
+                <div class="course-column">
+                    <h3>Compact</h3>
+                </div>
+                <div class="course-column">
+                    <h3>Light Weight</h3>   
+                </div>
+                
+                
+            </div>
+            <div class="row">
+                <div class="course-col">
+                    <h3>Simple</h3>   
+                </div>
+                <div class="course-col">
+                    <h3>Affordable</h3>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        <!-- Javascript for toggle menu -->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu()
+            {
+                navLinks.style.right = "0";
+            }
+            function hideMenu()
+            {
+                navLinks.style.right = "-200";
+            }
+        </script>
+
+    </body>
+</html>
+
+
+
+
+
